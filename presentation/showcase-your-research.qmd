@@ -13,10 +13,9 @@ You can write reports, prepare manuscripts and respond to reviewers.
 You can even meme with your code !
 
 ```{r}
-
 library(ggplot2)
 library(cowplot)
-
+library(magick)
 
 yes_img <- "images/yes.png"
 no_img <- "images/no.png"
