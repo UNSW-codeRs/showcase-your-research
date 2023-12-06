@@ -1,5 +1,5 @@
 ---
-title: "A quarto + knitr example with my incredible R code"
+title: "A quarto + knitr example with my phenomenal R code"
 author: "José R. Ferrer-Paris"
 date: "8 Dec 2023"
 affiliation: 
