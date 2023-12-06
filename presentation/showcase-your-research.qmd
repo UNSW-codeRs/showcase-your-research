@@ -2,23 +2,48 @@
 title: "showcase-your-research"
 ---
 
-Stop copying-and-pasting your code and figures between X^[Insert your programming environment here] and Y^[Insert your office software here]!
+Stop copy-and-paste'ing your code and figures between X^[Insert your programming environment here] and Y^[Insert your office software here]!
+
+<iframe src="https://giphy.com/embed/arp7Pkw2fmdwc" width="400" height="340" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/arp7Pkw2fmdwc">via GIPHY</a></p>
+
+```{r}
+here::i_am("presentation/showcase-your-research.qmd")
+```
+
+---
 
 You can use many tools to combine text and code and create beautiful documents.
 
-You can use your code and figures in presentations, webpages, blog posts, and webapps.
+<a title="The original uploader was Alejo2083 at  Wikimedia Commons., optimised by Vulphere, Public domain, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:LaTeX_logo.svg"><img height="100" alt="LaTeX logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/LaTeX_logo.svg/512px-LaTeX_logo.svg.png"></a> &nbsp; &nbsp; &nbsp;
+<a title="Dustin Curtis, CC0, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Markdown-mark.svg"><img height="100" alt="Markdown-mark" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/128px-Markdown-mark.svg.png"></a> &nbsp; &nbsp; &nbsp;
+<a title="quarto logo" href="https://quarto.org"><img height="100" alt="quarto logo" src="https://quarto.org/quarto.png"></a> &nbsp; &nbsp; &nbsp;
+<a title="Jupyter project logo" href="https://jupyter-notebook.readthedocs.io/"><img height="100" alt="Jupyter logo" src="https://jupyter-notebook.readthedocs.io/en/stable/_static/logo-rectangle.svg"></a> &nbsp; &nbsp; &nbsp; <a title="reveal.js logo" href="https://revealjs.com"><img height="100" alt="reveal.js" src="https://revealjs.com/images/logo/reveal-black-text.svg"></a>
 
-You can write reports, prepare manuscripts and respond to reviewers.
+---
 
-You can even meme with your code !
+And there are many libraries that help making your code reactive and interactive:
+
+<a title="Plotly wiki 12, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Plotly-logo.png"><img height = "100" alt="Plotly-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Plotly-logo.png/512px-Plotly-logo.png"></a> &nbsp; &nbsp; &nbsp;
+<a title="observable logo" href="https://observablehq.com/documentation/learn/overview"><img height="100" alt="observable" src="https://avatars.observableusercontent.com/avatar/5a51c3b908225a581d20577e488e2aba8cbc9541c52982c638638c370c3e5e8e?s=160&format=avif"></a> &nbsp; &nbsp; &nbsp;
+<a title="leaflet js" href="https://leafletjs.com"><img height="100" alt="leaflet js logo" src="https://leafletjs.com/docs/images/logo-ua.png"></a> &nbsp; &nbsp; &nbsp;
+<a title="Shiny" href="https://shiny.posit.co"><img height="100" alt="Shiny logo" src="https://shiny.posit.co/images/shiny-solo.png"></a>
+
+
+---
+
+Step 1: 
+
+Write reproducible code that creates what you want to show (tables, figures, maps, etc.) 
 
 ```{r}
+#| echo: true
+#| output-location: slide
 library(ggplot2)
 library(cowplot)
 library(magick)
 
-yes_img <- "images/yes.png"
-no_img <- "images/no.png"
+yes_img <- here::here("images/yes.png")
+no_img <- here::here("images/no.png")
 
 yes_plot <- ggdraw() + draw_image(yes_img, scale = 1)
 no_plot <- ggdraw() + draw_image(no_img, scale = 1)
@@ -35,19 +60,28 @@ good_plot <-
   labs(x = "Engine power (litres displ.)",
        y = "Fuel Efficiency (miles/gallon)")
 
-
 plot_grid(yes_plot, good_plot,
           no_plot, bad_plot) 
 ```
 
 
-## Markdown
+---
 
-Markdown combines both the clear reading experience from word processor documents with the benefits of software code documents, which is both versatile and easy to use—even for people that only know how to operate Word or Writer.
+Step 2:
 
-At first, Markdown was basically a small script [John Gruber](https://daringfireball.net/projects/markdown/) wrote for himself in 2004 to yield these benefits. 
+Use and reuse your code in:
 
-In 2012 a group of developers form [CommonMark](https://spec.commonmark.org/) to standardise Markdown into an internationally accepted norm.
+- presentations,
+- reports,
+- manuscripts,
+- webpages, 
+- dashboards,
+- blog posts,
+- webapps, etc
+
+---
+
+
 
 ## R Markdown
 
@@ -57,17 +91,6 @@ You can create "Notebooks" that include chunks of code that can be executed inde
 
 Or you can use Rmarkdown to render a final document showing code and/or outputs in different formats. 
 
-You can use [multiple languages](https://bookdown.org/yihui/rmarkdown/language-engines.html) besides R: from `awk` (https://en.wikipedia.org/wiki/AWK) to `groovy` (https://groovy-lang.org/) and including `python`, and `sql`.
+You can use [multiple languages](https://bookdown.org/yihui/rmarkdown/language-engines.html) besides R: from [`awk`](https://en.wikipedia.org/wiki/AWK) to [`groovy`](https://groovy-lang.org/) and including `python`, and `sql`.
 
-## Jupyter 
-
-[Project Jupyter](https://jupyter.org/) develops open-source software, open standards, and services for interactive computing across multiple programming languages. 
-
-Jupyter supports execution environments (called "kernels") in several dozen languages, including Julia, R, Haskell, Ruby, and Python. 
-
-## Quarto
-
-An open-source scientific and technical publishing system. Quarto can use Jupyter notebooks or plain text markdown to create dynamic content or reproducible documents.
-
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
 

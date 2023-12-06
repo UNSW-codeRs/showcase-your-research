@@ -1,5 +1,8 @@
 project:
   title: "showcase-your-research"
-
+format: 
+  revealjs:
+    logo: logo-codeRs.png
+    footer: "Footer text"
 
 
