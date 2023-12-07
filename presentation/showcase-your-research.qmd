@@ -137,6 +137,7 @@ Use and reuse your code in:
 
 - Markdown dashboard: [{{< fa link >}}](https://neomapas.github.io/iNat-obs-dashboard/) / [{{< fa brands github >}}](https://github.com/NeoMapas/iNat-obs-dashboard)
 - Blogdown website: [{{< fa link >}}](https://unsw-coders.netlify.app) / [{{< fa brands github >}}](https://github.com/unswcodeRs/codeRs_website)
+- Shiny Webapp [{{< fa link >}}](https://posit-connect-unsw.intersect.org.au/africa-tropical-alpine/) / [{{< fa brands github >}}](https://github.com/jrfep/T6.5-tropical-alpine-model-calibration)
 - Quarto website: [{{< fa link >}}](https://neomapas.github.io)
 - Quarto project: [{{< fa link >}} HTML](https://red-list-ecosystem.github.io/T6.1-SA-01-VE-01-Cordillera-Merida) / [{{< fa book >}} pre-print](https://ecoevorxiv.org/repository/view/6046/) / [{{< fa brands github >}}](https://github.com/red-list-ecosystem/T6.1-SA-01-VE-01-Cordillera-Merida)
   
