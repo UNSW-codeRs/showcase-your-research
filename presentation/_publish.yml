@@ -1,0 +1,4 @@
+- source: showcase-your-research.qmd
+  quarto-pub:
+    - id: e2ccce93-e184-4588-9473-e51b2d05aca8
+      url: 'https://jrfep.quarto.pub/showcase-your-research'
